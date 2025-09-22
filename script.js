@@ -10,7 +10,7 @@ let slides = [];
 
 async function loadAllSheets() {
   const container = document.getElementById('slider-content');
-  container.innerHTML = '<div class="loading">Загрузка данных...</div>';
+  container.innerHTML = '';
   slides = [];
 
   for (let i = 0; i < sheetUrls.length; i++) {
@@ -111,6 +111,7 @@ function renderLeaderCard(data) {
 
   return card;
 }
+
 
 
 
