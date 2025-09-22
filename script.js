@@ -2,7 +2,7 @@ const sheetUrls = [
   // 1-й слайд: таблица
   https://docs.google.com/spreadsheets/u/0/d/1c-4qaUYLn5MuFN1b1rfpmPva8ZpXzAWiM3mHS3BxOdo/export?format=csv&id=1c-4qaUYLn5MuFN1b1rfpmPva8ZpXzAWiM3mHS3BxOdo&gid=0,
   // 2-й слайд: лидер дня
-  'вставте ссылку формата CSV'
+ https://docs.google.com/spreadsheets/u/0/d/1dGhcG5VwKJOL-mrX4ovBT3gYO-XYc55kWpEgqMlNefM/export?format=csv&id=1dGhcG5VwKJOL-mrX4ovBT3gYO-XYc55kWpEgqMlNefM&gid=0
 ];
 
 let currentIndex = 0;
@@ -141,4 +141,5 @@ setInterval(() => {
 }, 10000);
 
 loadAllSheets();
+
 
