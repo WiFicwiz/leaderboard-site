@@ -45,8 +45,8 @@ async function loadCSV(url) {
     const res = await fetch(url + '&t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const text = await res.text();
-    const rows = text.trim().split(/\r?\n/);
-    return rows.map(r => r.split(/,|;|\t/));
+    const rows = text.trim().split(/\r\n/);
+   return rows.map(r => r.split(/;|\t/));
   } catch (e) {
     console.error(e);
     return [['Ошибка загрузки']];
@@ -143,6 +143,7 @@ setInterval(() => {
 }, 10000);
 
 loadAllSheets();
+
 
 
 
