@@ -1,10 +1,10 @@
 const sheetUrls = [
   // 1-й слайд: таблица
   
-C:\Users\krist\Downloads
+
   // 2-й слайд: лидер дня
   
-C:\Users\krist\Downloads
+
 ];
 
 let currentIndex = 0;
@@ -143,6 +143,7 @@ setInterval(() => {
 }, 10000);
 
 loadAllSheets();
+
 
 
 
