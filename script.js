@@ -71,7 +71,7 @@ function renderLeaderCard(data) {
   const rows = data.slice(1);
 
   // ищем колонку "Очки" (или "Score")
-  const scoreIndex = headers.findIndex(h => /очк|score/i.test(h));
+  const scoreIndex = headers.findIndex(h => /очки|score/i.test(h));
   if (scoreIndex === -1) {
     return document.createTextNode("Не найдена колонка 'Очки'");
   }
@@ -111,6 +111,7 @@ function renderLeaderCard(data) {
 
   return card;
 }
+
 
 
 
