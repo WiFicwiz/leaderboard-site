@@ -112,34 +112,6 @@ function renderLeaderCard(data) {
   return card;
 }
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) {
-      slide.classList.add('active');
-    }
-  });
-  currentIndex = index;
-}
 
-document.querySelector('.prev').addEventListener('click', () => {
-  if (slides.length > 0) {
-    showSlide((currentIndex - 1 + slides.length) % slides.length);
-  }
-});
-
-document.querySelector('.next').addEventListener('click', () => {
-  if (slides.length > 0) {
-    showSlide((currentIndex + 1) % slides.length);
-  }
-});
-
-setInterval(() => {
-  if (slides.length > 0) {
-    showSlide((currentIndex + 1) % slides.length);
-  }
-}, 10000);
-
-loadAllSheets();
 
 
