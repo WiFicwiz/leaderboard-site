@@ -1,6 +1,6 @@
 const sheetUrls = [
   // 1-й слайд: таблица
-  'вставте ссылку формата CSV',
+  'https://docs.google.com/spreadsheets/d/e/2PACX-1vQWvJcrCWVcwLcqfTXWrw-ea5GY2oBAAM0vrGrnD_Js8mcBHMe9RAlLf8AIKbOkRd0TqODUgef14u_q/pub?output=csv',
   // 2-й слайд: лидер дня
   'вставте ссылку формата CSV'
 ];
@@ -141,3 +141,4 @@ setInterval(() => {
 }, 10000);
 
 loadAllSheets();
+
